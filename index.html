@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Ulrich Silver Pieume Sime" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ulrich Silver Pieume Sime">Ulrich Pieume</h1>
+          <p class="title">Database Administrator</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:pieumeulrich@gmail.com" class="contact-link">ulrich@ntassop.ca</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+18255597061" class="contact-link">+1 (825) 559-7061</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Available</p>
+              <time>Full-Time / Contract</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Calgary, Alberta, Canada</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/pieume-ulrich" class="social-link" target="_blank">
+              <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/pieumeulrich" class="social-link" target="_blank">
+              <ion-icon class="socials-icons" name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon class="socials-icons" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link  active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+
+      <!-- ABOUT -->
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Database Administrator and IT professional based in Calgary, Alberta, with a strong background in
+            designing, securing, and migrating relational databases. I hold a Database Administration Certificate from
+            the Southern Alberta Institute of Technology (SAIT), and I bring over four years of hands-on experience â€”
+            from enterprise environments in Cameroon to cloud-based infrastructure projects in Canada.
+          </p>
+          <p>
+            My core strengths lie in SQL Server, Azure SQL, data integrity, and IT infrastructure management. I thrive
+            on solving complex data problems and building robust, scalable systems. I'm passionate about cloud technology,
+            data security, and delivering reliable technical solutions that help organizations make better decisions.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Administration</h4>
+                <p class="service-item-text">Designing, securing, and maintaining SQL Server and Azure SQL databases with performance tuning and disaster recovery.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="dev icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics</h4>
+                <p class="service-item-text">Transforming raw data into actionable insights using SQL, reporting tools, and data visualization techniques.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud &amp; Security</h4>
+                <p class="service-item-text">Managing Azure cloud infrastructure and implementing robust security measures to protect organizational data.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="photo icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">IT Infrastructure</h4>
+                <p class="service-item-text">Leading technical support operations, network setup, and hardware/software maintenance across enterprise environments.</p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>Ulrich demonstrated exceptional database skills on our project. His attention to data integrity and performance optimization was outstanding. He delivered clean, well-documented solutions on time.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>Working with Ulrich was a pleasure. He quickly grasped our system requirements and proposed solid Azure SQL solutions that improved our reporting pipeline significantly.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>Ulrich's IT leadership was invaluable during our infrastructure transition. His calm, methodical approach kept the team on track and the systems running smoothly throughout.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>Ulrich handled our data migration project with great professionalism. He identified risks early, communicated clearly, and delivered a zero-downtime cutover we were very proud of.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <time datetime="2021-06-14">14 June, 2021</time>
+              <div data-modal-text>
+                <p>Ulrich demonstrated exceptional database skills on our project. His attention to data integrity and performance optimization was outstanding. He delivered clean, well-documented solutions on time.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Clients</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-1-color.png" alt="client logo"></a></li>
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-2-color.png" alt="client logo"></a></li>
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-3-color.png" alt="client logo"></a></li>
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-4-color.png" alt="client logo"></a></li>
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-5-color.png" alt="client logo"></a></li>
+            <li class="clients-item"><a href="#"><img src="./assets/images/logo-6-color.png" alt="client logo"></a></li>
+          </ul>
+        </section>
+
+      </article>
+
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Southern Alberta Institute of Technology (SAIT)</h4>
+              <span>2023 - 2025</span>
+              <p class="timeline-text">Database Administration Certificate - Calgary, Alberta. Training in relational database design, SQL Server, Azure SQL, query optimization, backup and recovery, and database security.</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Yaounde I @ Faculty of Science</h4>
+              <span>2017 - 2020</span>
+              <p class="timeline-text">Bachelor's Degree in Computer Science @ Yaounde, Cameroon. Foundation in algorithms, data structures, software engineering, networking, and systems programming.</p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">KUKAT Travel Agency Management System</h4>
+              <span>SAIT Academic Project, Calgary, AB | 2025 - Present</span>
+              <ul class="timeline-text">
+                <li>Designed a fully normalized Azure SQL Server database schema for a travel agency platform, applying ER modeling and indexing strategies to ensure scalability and query performance across all modules.</li>
+                <li>Administered the Azure SQL environment including access management, role-based permissions, backup configuration, and performance monitoring to ensure data security and compliance throughout the project lifecycle.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database Administrator &amp; BI Developer</h4>
+              <span>Kingdom Investment Scheme, Douala, Cameroon | November 2022 - October 2024</span>
+              <ul class="timeline-text">
+                <li>Architected and maintained a relational database system to manage client financial records, agent commissions, and investment transactions while applying normalization and ER modeling to ensure data integrity across all operations.</li>
+                <li>Designed and implemented stored procedures, triggers, and automated scripts to enforce business rules at the database layer, reducing manual processing effort by 60% and eliminating data entry inconsistencies.</li>
+                <li>Developed Power BI dashboards tracking monthly revenue per agent, commission distributions, and investment trends, translating raw financial data into actionable insights for management decision-making.</li>
+                <li>Performed routine database maintenance including index optimization, statistics updates, and scheduled backups, ensuring system reliability and minimizing downtime across all operational modules.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database Administrator</h4>
+              <span>Ministry of Secondary Education, Yaounde, Cameroon | December 2020 - October 2022</span>
+              <ul class="timeline-text">
+                <li>Designed and maintained a centralized SQL Server database supporting 200+ secondary institutions, implementing normalization and ER modeling to ensure data integrity, scalability, and consistency.</li>
+                <li>Developed and optimized complex T-SQL queries, stored procedures, and views to support reporting workflows, reducing query execution time by 45% and improving system responsiveness for end users.</li>
+                <li>Performed scheduled database backups, restoration testing, and disaster recovery planning while maintaining 100% data availability and zero data loss incidents across a 2-year tenure using RMAN.</li>
+                <li>Built Power BI dashboards tracking teacher performance KPIs, student outcomes, and resource distribution across 200+ schools, enabling data-driven decision-making at the national level.</li>
+              </ul>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL Server / T-SQL</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Azure SQL / Cloud Services</h5>
+                <data value="82">82%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 82%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Database Security &amp; Auditing</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Node.js / Express</h5>
+                <data value="78">78%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 78%;"></div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Database</button></li>
+            <li class="filter-item"><button data-filter-btn>Cloud</button></li>
+            <li class="filter-item"><button data-filter-btn>Full-Stack</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Database</button></li>
+              <li class="select-item"><button data-select-item>Cloud</button></li>
+              <li class="select-item"><button data-select-item>Full-Stack</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="full-stack">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-1.jpg" alt="KUKAT Food Marketplace" loading="lazy">
+                </figure>
+                <h3 class="project-title">KUKAT â€” Food Marketplace</h3>
+                <p class="project-category">Full-Stack</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="database">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-2.png" alt="Education DB Schema" loading="lazy">
+                </figure>
+                <h3 class="project-title">Education DB Schema</h3>
+                <p class="project-category">Database</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cloud">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-3.jpg" alt="Azure Cloud Infrastructure" loading="lazy">
+                </figure>
+                <h3 class="project-title">Azure Cloud Infrastructure</h3>
+                <p class="project-category">Cloud</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="database">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-4.png" alt="DB Security Audit" loading="lazy">
+                </figure>
+                <h3 class="project-title">DB Security &amp; Audit System</h3>
+                <p class="project-category">Database</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full-stack">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-5.png" alt="Student Records Portal" loading="lazy">
+                </figure>
+                <h3 class="project-title">Student Records Portal</h3>
+                <p class="project-category">Full-Stack</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cloud">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-6.png" alt="Legacy-to-Azure Migration" loading="lazy">
+                </figure>
+                <h3 class="project-title">Legacy-to-Azure Migration</h3>
+                <p class="project-category">Cloud</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="database">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-7.png" alt="Oracle DBA Lab" loading="lazy">
+                </figure>
+                <h3 class="project-title">Oracle DBA Lab</h3>
+                <p class="project-category">Database</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full-stack">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-8.jpg" alt="Flight Reservation System" loading="lazy">
+                </figure>
+                <h3 class="project-title">Flight Reservation System</h3>
+                <p class="project-category">Full-Stack</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cloud">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-9.png" alt="ntassop.ca Web Infrastructure" loading="lazy">
+                </figure>
+                <h3 class="project-title">ntassop.ca Web Infrastructure</h3>
+                <p class="project-category">Cloud</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- BLOG -->
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Why every developer should understand databases" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Database</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-03-10">Mar 10, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Why every developer should understand databases</h3>
+                  <p class="blog-text">A deeper look at why database fundamentals are essential for modern software teams.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Migrating from on-premise SQL Server to Azure SQL" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-01-18">Jan 18, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Migrating from on-premise SQL Server to Azure SQL</h3>
+                  <p class="blog-text">Lessons learned from planning and executing a real-world cloud migration project.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Database security essentials for small organizations" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Security</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-11-05">Nov 05, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Database security essentials for small organizations</h3>
+                  <p class="blog-text">Practical steps to lock down your data without an enterprise security budget.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="T-SQL tips that improved my query performance" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Database</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-09-22">Sep 22, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">T-SQL tips that improved my query performance</h3>
+                  <p class="blog-text">Tried-and-tested techniques for writing faster, cleaner T-SQL queries.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="Building a backup strategy that actually works" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Database</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-07-14">Jul 14, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Building a backup strategy that actually works</h3>
+                  <p class="blog-text">How to design and test a backup and recovery plan you can trust under pressure.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="From IT support to DBA: my career transition story" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Career</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-05-01">May 01, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">From IT support to DBA: my career transition story</h3>
+                  <p class="blog-text">How I moved from helpdesk to database administration, and what I learned along the way.</p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161051.05579935427!2d-114.27190754013086!3d51.02731833990463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script>'use strict';
+
+
+
+// element toggle function
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+
+
+// sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// sidebar toggle functionality for mobile
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+
+
+
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
+
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
+
+  testimonialsItem[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+
+    testimonialsModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
+
+
+
+// custom select variables
+const select = document.querySelector("[data-select]");
+const selectItems = document.querySelectorAll("[data-select-item]");
+const selectValue = document.querySelector("[data-selecct-value]");
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+
+select.addEventListener("click", function () { elementToggleFunc(this); });
+
+// add event in all select items
+for (let i = 0; i < selectItems.length; i++) {
+  selectItems[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    elementToggleFunc(select);
+    filterFunc(selectedValue);
+
+  });
+}
+
+// filter variables
+const filterItems = document.querySelectorAll("[data-filter-item]");
+
+const filterFunc = function (selectedValue) {
+
+  for (let i = 0; i < filterItems.length; i++) {
+
+    if (selectedValue === "all") {
+      filterItems[i].classList.add("active");
+    } else if (selectedValue === filterItems[i].dataset.category) {
+      filterItems[i].classList.add("active");
+    } else {
+      filterItems[i].classList.remove("active");
+    }
+
+  }
+
+}
+
+// add event in all filter button items for large screen
+let lastClickedBtn = filterBtn[0];
+
+for (let i = 0; i < filterBtn.length; i++) {
+
+  filterBtn[i].addEventListener("click", function () {
+
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterFunc(selectedValue);
+
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
+
+  });
+
+}
+
+
+
+// contact form variables
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+// add event to all form input field
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function () {
+
+    // check form validation
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+
+  });
+}
+
+
+
+// page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+// add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+
+  });
+}</script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
